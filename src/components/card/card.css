@@ -1,5 +1,5 @@
 .card{
-  @apply w-full max-w-[240px] h-[300px] md:max-w-[280px] mx-auto shadow rounded  bg-white dark:bg-DarkBlue(DarkModeElements)
+  @apply w-full max-w-[270px] h-[300px] md:max-w-[280px] mx-auto shadow rounded  bg-white dark:bg-DarkBlue(DarkModeElements)
 }
 
 .card div {
