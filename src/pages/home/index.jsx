@@ -11,6 +11,7 @@ const index = () => {
   const { isLoading, isError, data, countries, setCountries} = useFetch(url)
   const [query, setQuery] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
+  const [index, setIndex] = useState(0)
 
   const regions = ['worldwide','Asia', 'Oceania', 'Europe', 'Americas', 'Antarctic', 'Africa'].sort()
 
@@ -45,6 +46,7 @@ const index = () => {
   const filterBtns = document.querySelectorAll('.filter-btn')
   filterBtns.forEach(btn => {
     btn.addEventListener('click', (e)=>{
+      setIndex(0)
       removeActive()
       e.currentTarget.classList.add('active')
     })
@@ -110,6 +112,8 @@ const index = () => {
         countries={countries}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}
+        index={index}
+        setIndex={setIndex}
       />
     </div>
   )
