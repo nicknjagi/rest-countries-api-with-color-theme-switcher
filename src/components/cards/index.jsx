@@ -7,7 +7,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 import CardSkeleton from './CardSkeleton'
 
 
-const Cards = ({isLoading,isError,countries,currentPage,setCurrentPage}) => {
+const Cards = ({isLoading,isError,countries,currentPage,setCurrentPage,index, setIndex}) => {
   const [postsPerPage, setPostsPerPage] = useState(12)
   
   if(isLoading){
@@ -33,12 +33,19 @@ const Cards = ({isLoading,isError,countries,currentPage,setCurrentPage}) => {
   // console.log(countries.sort())
   return (
     <>
-      <div className='cards-container'>
-        {currentPosts.map((country)=> {
+      <div className="cards-container">
+        {currentPosts.map((country) => {
           return <Card key={country.name.common} country={country} />
         })}
       </div>
-      <Pagination totalPosts={countries.length} currentPage={currentPage} postsPerPage={postsPerPage} setCurrentPage={setCurrentPage}/>
+      <Pagination
+        totalPosts={countries.length}
+        currentPage={currentPage}
+        postsPerPage={postsPerPage}
+        setCurrentPage={setCurrentPage}
+        index={index}
+        setIndex={setIndex}
+      />
     </>
   )
 }
