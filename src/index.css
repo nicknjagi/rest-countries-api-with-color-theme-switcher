@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container{
+  @apply font-nunito bg-VeryLightGray(LightModeBackground) dark:bg-VeryDarkBlue(DarkModeBackground) text-VeryDarkBlue(LightModeText) dark:text-white max-w-[100vw]
+}
+main {
+  @apply min-h-[90vh]
+}
+
+.detail-container {
+  @apply py-6 px-4 md:px-8 text-base max-w-7xl mx-auto
+}
+.back-link{
+  @apply border-transparent px-6 py-1 flex gap-2 items-center w-fit bg-white dark:bg-DarkBlue(DarkModeElements) shadow-md mb-6 rounded-sm hover:scale-110 transition-transform ease-out duration-300
+}
+
+svg{
+  @apply w-4 dark:text-white text-DarkBlue(DarkModeElements)
+}
