@@ -16,9 +16,6 @@ export default {
         'DarkGray(LightModeInput)': 'hsl(0, 0%, 52%)',
         'VeryLightGray(LightModeBackground)': 'hsl(0, 0%, 98%)',
       },
-      backgroundImage:{
-        'search' : 'url("/public/assets.images/search-outline.svg")'
-      },
     },
   },
   plugins: [],
