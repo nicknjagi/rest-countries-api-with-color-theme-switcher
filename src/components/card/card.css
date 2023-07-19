@@ -1,0 +1,30 @@
+.card{
+  @apply w-full max-w-[240px] h-[300px] md:max-w-[280px] mx-auto shadow rounded  bg-white dark:bg-DarkBlue(DarkModeElements)
+}
+
+.card div {
+  @apply  mx-auto 
+}
+
+.card div img{
+  @apply block w-full h-full object-cover rounded-t
+}
+
+.card div:nth-child(1){
+  @apply h-[9rem]
+}
+.card div:nth-child(2){
+  @apply px-4 pt-4 pb-8
+}
+
+.card h3{
+  @apply font-extrabold text-base mb-2
+}
+
+.card div:nth-child(2) p{
+  @apply capitalize
+}
+
+.card div:nth-child(2) p span {
+  @apply font-semibold
+}

@@ -1,0 +1,15 @@
+.header-container{
+  @apply bg-white dark:bg-DarkBlue(DarkModeElements) shadow-md
+}
+
+header {
+  @apply flex justify-between py-6 px-4 md:px-8 max-w-7xl mx-auto
+}
+
+header h2 {
+  @apply text-xs md:text-base font-extrabold font-nunito 
+}
+
+header button{
+  @apply flex gap-1 items-center text-xs
+}

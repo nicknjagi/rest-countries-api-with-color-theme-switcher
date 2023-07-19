@@ -1,0 +1,18 @@
+.pages-container {
+  @apply py-8 text-center flex flex-wrap gap-x-2 gap-y-2 rounded
+}
+
+.page-btn {
+  @apply px-4 py-1 sm:py-2 border rounded dark:border-white border-DarkBlue(DarkModeElements) hover:bg-DarkBlue(DarkModeElements) hover:text-white dark:hover:bg-white dark:hover:text-DarkBlue(DarkModeElements)
+}
+
+.activePage{
+  @apply bg-DarkBlue(DarkModeElements) text-white dark:bg-white dark:text-DarkBlue(DarkModeElements)
+}
+.pages-container p {
+  @apply self-end
+}
+
+.group-btn {
+  @apply px-1 border rounded dark:border-white border-DarkBlue(DarkModeElements) hover:bg-DarkBlue(DarkModeElements) hover:text-white dark:hover:bg-white dark:hover:text-DarkBlue(DarkModeElements)
+}
