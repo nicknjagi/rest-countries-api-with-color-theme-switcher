@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import './pagination.css'
 
-const Pagination = ({totalPosts, postsPerPage,setCurrentPage, currentPage}) => {
-  const [index, setIndex] = useState(0)
+const Pagination = ({totalPosts, postsPerPage,setCurrentPage, currentPage,index,setIndex}) => {
   let pages = []
   let groupPages = []
   let pagesArr = []
@@ -40,10 +39,10 @@ const Pagination = ({totalPosts, postsPerPage,setCurrentPage, currentPage}) => {
       <button className="group-btn" onClick={() => getIndex('prev')}>
         <ion-icon name="caret-back-outline"></ion-icon>
       </button>
-      {groupPages[index].map((page, index) => {
+      {groupPages[index].map((page, i) => {
         return (
           <button
-            key={index}
+            key={i}
             onClick={() => setCurrentPage(page)}
             className={
               currentPage === page ? 'activePage page-btn' : 'page-btn'
