@@ -1,0 +1,44 @@
+.country-detail-container {
+  @apply mx-auto mt-12 sm:grid md:grid-cols-2 md:content-center md:gap-6 md:justify-between
+}
+.flag{
+  @apply w-full max-w-[400px] h-auto 
+}
+.flag img{
+  @apply w-full h-auto object-fill rounded-sm
+}
+
+.details {
+  @apply mt-8 md:mt-0
+}
+.details h3 {
+  @apply text-xl font-extrabold mb-6
+}
+.lists-container{
+  @apply md:flex md:gap-6 lg:justify-between 
+}
+.lists-container ul li {
+  @apply font-light text-sm 
+}
+.label{
+  @apply font-semibold 
+}
+
+.lists-container ul {
+  @apply mb-8 flex-1
+}
+
+.details h4 {
+  @apply font-semibold text-base
+}
+
+.border-countries{
+  @apply flex flex-col gap-2 lg:flex-row 
+}
+
+.border-countries-container{
+  @apply flex flex-wrap  gap-2
+}
+.border-link {
+  @apply px-4 bg-white dark:bg-DarkBlue(DarkModeElements) shadow rounded-sm
+}

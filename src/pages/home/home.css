@@ -1,0 +1,48 @@
+.home-container{
+  @apply text-sm max-w-7xl mx-auto px-4 md:px-8
+}
+.search-filter-container {
+  @apply flex flex-col sm:flex-row sm:justify-between gap-8 my-6 md:my-10 rounded
+}
+.search-filter-container button{
+  @apply text-xs
+}
+form {
+  @apply relative 
+}
+
+#search {
+  @apply bg-white dark:bg-DarkBlue(DarkModeElements) py-3 pl-16 px-4 rounded w-full md:w-96 shadow
+}
+#search::placeholder{
+  @apply text-DarkGray(LightModeInput) dark:text-white text-xs
+}
+
+.search-btn{
+  @apply w-8 py-2 px-6 absolute top-[50%] translate-y-[-50%] left-0
+}
+
+.search-btn > ion-icon{
+  @apply translate-y-[2px]
+}
+
+.region-container{
+  @apply relative 
+}
+
+.region-toggle-btn{
+  @apply w-44 py-3 px-5 mb-1 flex justify-between items-center bg-white dark:bg-DarkBlue(DarkModeElements) rounded shadow
+}
+
+.regions{
+  @apply absolute top-11 left-0 flex flex-col w-44 py-2 bg-white dark:bg-DarkBlue(DarkModeElements) rounded shadow 
+}
+
+.regions > button {
+  @apply w-auto text-left capitalize px-5 py-1 hover:bg-blue-400
+}
+
+.active{
+  @apply bg-blue-400
+}
+
