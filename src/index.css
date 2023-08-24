@@ -13,7 +13,7 @@ main {
   @apply py-6 px-4 md:px-8 text-base max-w-7xl mx-auto
 }
 .back-link{
-  @apply border-transparent px-6 py-1 flex gap-2 items-center w-fit bg-white dark:bg-DarkBlue(DarkModeElements) shadow-md mb-6 rounded-sm hover:scale-110 transition-transform ease-out duration-300
+  @apply border-transparent px-6 py-2 flex gap-2 items-center w-fit bg-white dark:bg-DarkBlue(DarkModeElements) shadow-md mb-6 rounded-sm hover:scale-110 transition-transform ease-out duration-300
 }
 
 svg{
