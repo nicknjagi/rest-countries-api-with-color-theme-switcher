@@ -24,7 +24,7 @@ const Cards = ({isLoading,isError,countries,currentPage,setCurrentPage,index, se
     )
   }
   if(isError){
-    return 'Something went wrong :('
+    return 'Something went wrong ; ('
   }
 
   const lastPosIndex = currentPage * postsPerPage
