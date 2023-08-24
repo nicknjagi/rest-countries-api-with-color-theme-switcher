@@ -3,8 +3,7 @@ import useFetch from '../../utilities/useFetch'
 import './home.css'
 import Cards from '../../components/cards'
 
-const url =
-  'https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital'
+const url = import.meta.env.VITE_URL
 
 const index = () => {
   const [showRegion, setShowRegion] = useState(false)
