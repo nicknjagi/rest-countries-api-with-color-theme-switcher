@@ -36,7 +36,7 @@ const Pagination = ({totalPosts, postsPerPage,setCurrentPage, currentPage,index,
 
   return (
     <section className="pages-container">
-      <button className="group-btn" onClick={() => getIndex('prev')}>
+      <button className="group-btn" aria-label="previous pages" onClick={() => getIndex('prev')}>
         <ion-icon name="caret-back-outline"></ion-icon>
       </button>
       {groupPages[index].map((page, i) => {
@@ -52,7 +52,7 @@ const Pagination = ({totalPosts, postsPerPage,setCurrentPage, currentPage,index,
         )
       })}
       {index === groupPages.length - 1 ? '' : <p>...</p>}
-      <button className="group-btn" onClick={() => getIndex('next')}>
+      <button className="group-btn" aria-label="next pages" onClick={() => getIndex('next')}>
         <ion-icon name="caret-forward-outline"></ion-icon>
       </button>
     </section>
